@@ -46,10 +46,9 @@ class App extends Component {
     _showData( event ){
       let result = {};
       // Make a request for a user with a given ID
-      // http://samples.openweathermap.org/data/2.5/weather?q=London&appid=b6907d289e10d714a6e88b30761fae22
 
 // api.openweathermap.org/data/2.5/forecast?id=524901&APPID=1111111111
-      axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&APPID=34ac1a926d3b3f115ac758dd3a3a54ee`)
+      axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&APPID=xxxxxxxxxxx`)
       .then( result => this.setState({ resultData: result.data, show: true }) )
       .catch(function (error) {
         console.log('Error',error);
